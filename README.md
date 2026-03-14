@@ -1,6 +1,10 @@
 # Library-Website
 Library website mostly backend development using PHP, and phpmyadmin database.
 
+This website allows the user to login/register an account. The user can then search for books by title, author or category, reserve books, cancel reservations, view reserved books, and logout.
+The user login details are stored in the database. Books and reservations are also stored. The passwords are stored using **secure hashing** meaning the password cannot be viewed from the database.
+Server-side validation is used to ensure usernames are unique and phone numbers have the right amount of digits.
+
 A PHP web application built with MySQL and hosted locally using XAMPP. Includes user authentication, session handling, and database‑driven features. This repository contains the source code and SQL export needed to run the project locally.
 
 The purpose of this project is to learn backend development and PHP, use a database and host it on a server. To use server side validation, password security when stored in the database and configurig database connection.
