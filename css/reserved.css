@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+  padding-top: 170px;
+}
+
+
+.stripe {
+  height: 150px;
+  width: 100%;
+  background-color: #14213d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .stripe {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+
+#title {
+  margin: 0;
+  font-size: 100px; /* responsive font size*/
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+}
+
+
+#menu-button {
+  padding: 12px 20px;
+  background-color: #14213d;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  border: 1px solid #e5e5e5;
+  white-space: nowrap;
+  margin-left: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#menu-button:hover {
+  background-color: #e5e5e5;
+  color: #14213d;
+}
+
+#button{
+  padding: 12px 20px;
+  background-color: #14213d;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  border: 1px solid #e5e5e5;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+#button:hover {
+  background-color: #e5e5e5;
+  color: #14213d;
+}
+
+
+
+#reserved-title{
+    font-family: "DM Serif Text", serif;
+    font-size: 52px;
+    font-weight: 600;
+    color: #14213d;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#reserved-container {
+  margin: 0 auto;                 /* center horizontally */
+  background-color: white;
+  border: 5px solid white;
+  width: 90%;                     /* responsive width */
+  max-width: 900px;               /* limit on large screens */
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.15);
+}
+
+#reserved-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #14213d;
+}
+
+/* Header row */
+.reserved-header th {
+  background-color: #14213d;
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Data rows */
+.reserved-row td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+
+/* Alternate row background for readability */
+.reserved-row:nth-child(even) {
+  background-color: #F6F4F3;
+}
+
+
+/* Cancel button */
+.r-action button {
+  padding: 12px 20px;
+  background-color: #14213d;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  border: 1px solid #F6F4F3;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.r-action button:hover {
+  background-color: #e5e5e5;;
+  color: #14213d;
+}
+
+/* No reserved books message */
+#no-reserved {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Pagination*/
+.grid_pagination{
+  box-sizing: border-box;
+  color: rgb(91, 90, 89);
+  display: flex;
+  font-family: "DM Serif Text", serif;
+  font-feature-settings: "liga" 0;
+  font-size: 13px;
+  font-stretch: 75%;
+  font-weight: 400;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 16px;
+  padding-top: 0px;
+
+}
+
+#pagination{
+  align-items: centßer;
+  border-bottom-color: rgb(210, 208, 206);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(210, 208, 206);
+  border-left-width: 0px;
+  border-right-color: rgb(210, 208, 206);
+  border-right-width: 0px;
+  border-top-color: rgb(210, 208, 206);
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: #414361;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: "DM Serif Text", serif;
+  font-feature-settings: "liga" 0;
+  font-size: 20px;
+  font-stretch: 75%;
+  font-weight: 700;
+  height: 30px;
+  letter-spacing: normal;
+  line-height: 23.0769px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.pagination-arrow {
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #414361;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.pagination-arrow:hover {
+  background-color: #eee;
+}
+
+/* Grey out disabled arrows */
+.pagination-arrow.disabled {
+  color: #aaa;
+  pointer-events: none; /* prevents clicking */
+  cursor: default;
+}

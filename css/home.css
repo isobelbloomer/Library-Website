@@ -1,0 +1,157 @@
+
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+
+}
+
+.stripe {
+  height: 150px;
+  width: 100%;
+  background-color: #14213d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .stripe {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+
+#title {
+  margin: 0;
+  font-size: 100px; /* responsive font size*/
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+}
+
+#menu-button {
+  padding: 12px 20px;
+  background-color: #14213d;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  border: 1px solid #e5e5e5;
+  white-space: nowrap;
+  margin-left: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#menu-button:hover {
+  background-color: #e5e5e5;
+  color: #14213d;
+}
+
+.button{
+  padding: 12px 20px;
+  background-color: #14213d;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  border: 1px solid #e5e5e5;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.button:hover {
+  background-color: #e5e5e5;
+  color: #14213d;
+}
+
+
+#text {
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #14213d;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+/*Welcome message*/
+#welcome{
+  display: flex;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #14213d;
+  margin-left: 50px;
+  margin-top: 180px;
+}
+
+#searchfor {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: large;
+  color: #000;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* center vertically */
+  height: 200px; /* full screen minus stripe */
+}
+
+
+/*Contains search options*/
+.box {
+  background-color: white;
+  border: 5px solid white;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+/*Compatibility with smaller screens*/
+@media (max-width: 600px) {
+  box {
+    top: 100px;
+    left: 20px;
+    transform: none; 
+  }
+}
+
+
+/*Names of input boxes*/
+.label {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #14213d;
+} 
+
+/*User input boxes*/
+.input{
+  background-color: white;
+  font-family: sans-serif;
+  color: #212121;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #14213d;
+  border-radius: 5px;
+  padding: 6px;
+}
